@@ -1,0 +1,361 @@
+"","run_dir","metric_loss","metric_mse","metric_val_loss","metric_val_mse","flag_units1","flag_activation1","flag_recurrent_activation1","flag_recurrent_dropout1","flag_dropout1","flag_batch_size","flag_epochs","flag_loss","flag_optimizer","flag_metrics","epochs","epochs_completed","metrics","model","loss_function","optimizer","learning_rate","script","start","end","completed","output","source_code","context","type"
+"1","runs/2021-04-15T19-52-22Z",0.027,0.027,0.0235,0.0235,32,"tanh","sigmoid",0,0.5,64,3000,"mse","adam","mse",3000,300,"runs/2021-04-15T19-52-22Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:52:22,2021-04-15 19:53:20,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-52-22Z/tfruns.d/source.tar.gz","local","training"
+"2","runs/2021-04-15T19-51-26Z",0.0269,0.0269,0.0234,0.0234,16,"tanh","sigmoid",0,0.5,64,3000,"mse","adam","mse",3000,286,"runs/2021-04-15T19-51-26Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:51:26,2021-04-15 19:52:22,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-51-26Z/tfruns.d/source.tar.gz","local","training"
+"3","runs/2021-04-15T19-50-10Z",0.0273,0.0273,0.0233,0.0233,8,"tanh","sigmoid",0,0.5,64,3000,"mse","adam","mse",3000,397,"runs/2021-04-15T19-50-10Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:50:10,2021-04-15 19:51:26,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-50-10Z/tfruns.d/source.tar.gz","local","training"
+"4","runs/2021-04-15T19-49-18Z",0.0269,0.0269,0.0229,0.0229,3,"tanh","sigmoid",0,0.5,64,3000,"mse","adam","mse",3000,270,"runs/2021-04-15T19-49-18Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:49:18,2021-04-15 19:50:10,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-49-18Z/tfruns.d/source.tar.gz","local","training"
+"5","runs/2021-04-15T19-47-22Z",0.0271,0.0271,0.0223,0.0223,32,"tanh","sigmoid",0,0.25,64,3000,"mse","adam","mse",3000,612,"runs/2021-04-15T19-47-22Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:47:22,2021-04-15 19:49:18,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-47-22Z/tfruns.d/source.tar.gz","local","training"
+"6","runs/2021-04-15T19-46-12Z",0.0273,0.0273,0.0222,0.0222,16,"tanh","sigmoid",0,0.25,64,3000,"mse","adam","mse",3000,362,"runs/2021-04-15T19-46-12Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:46:12,2021-04-15 19:47:22,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-46-12Z/tfruns.d/source.tar.gz","local","training"
+"7","runs/2021-04-15T19-44-53Z",0.0273,0.0273,0.0225,0.0225,8,"tanh","sigmoid",0,0.25,64,3000,"mse","adam","mse",3000,413,"runs/2021-04-15T19-44-53Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:44:53,2021-04-15 19:46:12,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-44-53Z/tfruns.d/source.tar.gz","local","training"
+"8","runs/2021-04-15T19-43-54Z",0.0277,0.0277,0.022,0.022,3,"tanh","sigmoid",0,0.25,64,3000,"mse","adam","mse",3000,307,"runs/2021-04-15T19-43-54Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:43:54,2021-04-15 19:44:53,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-43-54Z/tfruns.d/source.tar.gz","local","training"
+"9","runs/2021-04-15T19-42-47Z",0.0275,0.0275,0.0223,0.0223,32,"tanh","sigmoid",0,0,64,3000,"mse","adam","mse",3000,343,"runs/2021-04-15T19-42-47Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:42:48,2021-04-15 19:43:54,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-42-47Z/tfruns.d/source.tar.gz","local","training"
+"10","runs/2021-04-15T19-41-58Z",0.0275,0.0275,0.0221,0.0221,16,"tanh","sigmoid",0,0,64,3000,"mse","adam","mse",3000,255,"runs/2021-04-15T19-41-58Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:41:58,2021-04-15 19:42:47,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-41-58Z/tfruns.d/source.tar.gz","local","training"
+"11","runs/2021-04-15T19-40-25Z",0.0277,0.0277,0.0224,0.0224,8,"tanh","sigmoid",0,0,64,3000,"mse","adam","mse",3000,485,"runs/2021-04-15T19-40-25Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:40:25,2021-04-15 19:41:58,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-40-25Z/tfruns.d/source.tar.gz","local","training"
+"12","runs/2021-04-15T19-38-47Z",0.0282,0.0282,0.0226,0.0226,3,"tanh","sigmoid",0,0,64,3000,"mse","adam","mse",3000,512,"runs/2021-04-15T19-38-47Z/tfruns.d/metrics.json","Model
+Model: ""sequential_1""
+________________________________________________________________________________
+Layer (type)                        Output Shape                    Param #     
+================================================================================
+lstm_1 (LSTM)                       (None, 5)                       140         
+________________________________________________________________________________
+dense_1 (Dense)                     (None, 1)                       6           
+================================================================================
+Total params: 146
+Trainable params: 146
+Non-trainable params: 0
+________________________________________________________________________________
+
+","mse","<tensorflow.python.keras.optimizer_v2.adam.Adam>",0.00100000004749745,"1_layer_lstm.R",2021-04-15 19:38:47,2021-04-15 19:40:25,TRUE,"
+> FLAGS <- flags(flag_integer(""units1"", 4), flag_string(""activation1"", 
++     ""tanh""), flag_string(""recurrent_activation1"", ""sigmoid""), 
++     flag_nu .... [TRUNCATED] 
+
+> model <- keras_model_sequential() %>% layer_lstm(units = FLAGS$units1, 
++     activation = FLAGS$activation1, recurrent_activation = FLAGS$recurrent .... [TRUNCATED] 
+
+> model_lstm %>% compile(loss = FLAGS$loss, optimizer = FLAGS$optimizer, 
++     metrics = FLAGS$metrics)
+
+> tic <- Sys.time()
+
+> history_lstm <- model_lstm %>% fit(x = train_x, y = train_y, 
++     batch_size = FLAGS$batch_size, epochs = FLAGS$epochs, verbose = 1, 
++     valida .... [TRUNCATED] ","runs/2021-04-15T19-38-47Z/tfruns.d/source.tar.gz","local","training"
